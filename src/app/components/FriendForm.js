@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class Employee extends Component {
+export default class FriendForm extends Component {
   constructor(){
     super();
     this.handleChange = this.handleChange.bind(this),
