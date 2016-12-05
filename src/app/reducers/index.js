@@ -1,4 +1,6 @@
 import { combineReducers } from 'redux'
+import newFriendReducer  from './newFriendReducer'
+import friendsReducer from './friendsReducer'
 // import __NameofReducer__ from './nameofReducerFile' for each Reducer you create
 
 // const indexReducer = combineReducers({
@@ -8,7 +10,8 @@ import { combineReducers } from 'redux'
 // })
 
 const indexReducer = combineReducers({
-
+  newFriend: newFriendReducer,
+  friends: friendsReducer
 })
 
-export default indexReducer
+export default indexReducer;
