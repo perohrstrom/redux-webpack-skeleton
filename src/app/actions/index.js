@@ -8,7 +8,6 @@ export const addFriend = (friend) => {
 
 export const HANDLE_CHANGE = 'HANDLE_CHANGE'
 export const handleChange = (text) => {
-  console.log("i'm inside the handle change action", text)
   return {
     type: HANDLE_CHANGE,
     payload: text

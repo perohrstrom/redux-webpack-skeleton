@@ -11,12 +11,12 @@ export default class Employee extends Component {
     this.props.handleChange(e.target.value)
   }
 
-  submitForm(){
-    debugger
+  submitForm(e){
+    e.preventDefault()
+    this.props.submitForm(this.props.newFriend)
   }
 
   render(){
-    console.log(this.props)
     return(
       <form onSubmit={this.submitForm}>
         <label>Add a Friend:</label>

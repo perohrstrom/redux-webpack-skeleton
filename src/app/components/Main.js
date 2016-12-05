@@ -15,7 +15,7 @@ export default class Main extends Component {
   }
 
   render(){
-    console.log(this.props)
+    console.log(this.props.friends)
     return(
       <div>
         <h1>{"Hello World!"}</h1>

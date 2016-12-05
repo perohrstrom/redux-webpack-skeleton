@@ -4,13 +4,13 @@ const initialState = []
 const friendsReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_FRIEND:
-      return Object.assign({}, state, {
-        friends: [
-          ...state.friends, {
-            name: action.payload
-          }
-        ]
-      })
+    console.log(state)
+      return [
+        ...state,
+        {
+          name: action.payload
+        }
+      ]
       default:
         return state
   }
