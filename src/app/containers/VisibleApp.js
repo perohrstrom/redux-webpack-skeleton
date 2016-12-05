@@ -5,9 +5,9 @@ import Main from '../components/Main';
 
 function mapStatetoProps(state) {
   return {
-    //state property: initialState form,
-    //friends: [],
-    //posts: []
+    // state property: initialState form,
+    friends: [],
+    posts: []
   }
 }
 
@@ -15,6 +15,6 @@ function dispatchToProps(dispatch) {
   return bindActionCreators(actionCreators, dispatch)
 }
 
-const VisibleApp = connect(mapStatetoProps, dispatch)(Main)
+const VisibleApp = connect(mapStatetoProps, dispatchToProps)(Main)
 
 export default VisibleApp

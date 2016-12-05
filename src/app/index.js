@@ -3,13 +3,13 @@ import React from 'react'
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import configureStore from './store/createStore'
-import VisibleApp from './VisibleApp'
+import VisibleApp from './containers/VisibleApp'
 
 const store = configureStore();
 
 render(
   <Provider store={store}>
     <VisibleApp />
-  </Provider,
+  </Provider>,
   document.getElementById('app')
 )
