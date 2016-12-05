@@ -6,8 +6,8 @@ import Main from '../components/Main';
 function mapStatetoProps(state) {
   return {
     // state property: initialState form,
-    friends: [],
-    posts: []
+    friends: state.friends,
+    newFriend: state.newFriend
   }
 }
 

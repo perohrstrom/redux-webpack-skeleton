@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import VisibleFriendForm from '../containers/VisibleFriendForm'
+import VisibleFriendList from '../containers/VisibleFriendList'
 // import any Container Components from './/containers/___fileName'
 
 export default class Main extends Component {
@@ -14,13 +16,13 @@ export default class Main extends Component {
   }
 
   render(){
-    console.log(this.props)
     return(
       <div>
         <h1>{"Hello World!"}</h1>
         <h2>{"This is where your other components go."}</h2>
         <h2>{"Check if they have container components. If they do, render those instead."}</h2>
-
+        <VisibleFriendForm />
+        <VisibleFriendList />
       </div>
     )
   }
