@@ -1,0 +1,39 @@
+2016-12-05T14:24:22.853579000 0.277523s notice: Recursively removing directory /Users/pohrstrom/Desktop/Programs/redux-webpack-skeleton/rethinkdb_data/tmp
+2016-12-05T14:24:22.873276000 0.297226s notice: Initializing directory /Users/pohrstrom/Desktop/Programs/redux-webpack-skeleton/rethinkdb_data
+2016-12-05T14:24:22.873413000 0.297356s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/pohrstrom/Desktop/Programs/redux-webpack-skeleton/rethinkdb_data' did not already exist or is empty.)
+2016-12-05T14:24:22.873638000 0.297581s notice: Running rethinkdb 2.3.5 (CLANG 7.3.0 (clang-703.0.31))...
+2016-12-05T14:24:22.904850000 0.328795s notice: Running on Darwin 16.1.0 x86_64
+2016-12-05T14:24:22.904917000 0.328859s notice: Loading data from directory /Users/pohrstrom/Desktop/Programs/redux-webpack-skeleton/rethinkdb_data
+2016-12-05T14:24:23.951145000 1.375130s info: Automatically using cache size of 268 MB
+2016-12-05T14:24:23.951602000 1.375587s notice: Listening for intracluster connections on port 29015
+2016-12-05T14:24:23.952971000 1.376956s notice: Listening for client driver connections on port 28015
+2016-12-05T14:24:23.953126000 1.377111s notice: Listening for administrative HTTP connections on port 8080
+2016-12-05T14:24:23.953130000 1.377114s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2016-12-05T14:24:23.953134000 1.377119s notice: Listening on driver addresses: 127.0.0.1, ::1
+2016-12-05T14:24:23.953136000 1.377120s notice: Listening on http addresses: 127.0.0.1, ::1
+2016-12-05T14:24:23.953140000 1.377124s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-12-05T14:24:23.953144000 1.377128s notice: Server ready, "Pers_MBP_home_gbm" 5d0f0720-04d2-4025-b1e7-79847207bfae
+2016-12-05T14:25:15.548492000 0.006992s notice: Running rethinkdb 2.3.5 (CLANG 7.3.0 (clang-703.0.31))...
+2016-12-05T14:25:15.552549000 0.011048s notice: Running on Darwin 16.1.0 x86_64
+2016-12-05T14:25:15.552631000 0.011128s notice: Loading data from directory /Users/pohrstrom/Desktop/Programs/redux-webpack-skeleton/rethinkdb_data
+2016-12-05T14:25:15.687953000 0.146450s info: Automatically using cache size of 273 MB
+2016-12-05T14:25:15.688408000 0.146905s notice: Listening for intracluster connections on port 29015
+2016-12-05T14:25:15.689799000 0.148295s notice: Listening for client driver connections on port 28015
+2016-12-05T14:25:15.689964000 0.148460s notice: Listening for administrative HTTP connections on port 8080
+2016-12-05T14:25:15.689967000 0.148463s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2016-12-05T14:25:15.689972000 0.148468s notice: Listening on driver addresses: 127.0.0.1, ::1
+2016-12-05T14:25:15.689973000 0.148470s notice: Listening on http addresses: 127.0.0.1, ::1
+2016-12-05T14:25:15.689977000 0.148474s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2016-12-05T14:25:15.689982000 0.148478s notice: Server ready, "Pers_MBP_home_gbm" 5d0f0720-04d2-4025-b1e7-79847207bfae
+2016-12-05T14:28:37.881083000 202.345556s info: Table 9ba27034-3f42-4e2f-83e8-f42fa4d0de83: Starting a new Raft election for term 1.
+2016-12-05T14:28:37.881879000 202.346352s info: Table 9ba27034-3f42-4e2f-83e8-f42fa4d0de83: Added replica on this server.
+2016-12-05T14:28:38.249458000 202.713931s info: Table 9ba27034-3f42-4e2f-83e8-f42fa4d0de83: This server is Raft leader for term 1. Latest log index is 0.
+2016-12-05T14:51:15.091051000 1559.595515s notice: Removing file /Users/pohrstrom/Desktop/Programs/redux-webpack-skeleton/rethinkdb_data/9ba27034-3f42-4e2f-83e8-f42fa4d0de83
+2016-12-05T14:51:15.091063000 1559.595526s info: Table 9ba27034-3f42-4e2f-83e8-f42fa4d0de83: Deleted the table.
+2016-12-05T14:53:14.015069000 1678.523082s info: Table 6d575003-ba3a-49cb-af5b-1bd8331f6bf0: Starting a new Raft election for term 1.
+2016-12-05T14:53:14.015288000 1678.523301s info: Table 6d575003-ba3a-49cb-af5b-1bd8331f6bf0: Added replica on this server.
+2016-12-05T14:53:14.216769000 1678.724782s info: Table 6d575003-ba3a-49cb-af5b-1bd8331f6bf0: This server is Raft leader for term 1. Latest log index is 0.
+2016-12-05T14:53:16.407154000 1680.915208s info: Table 50202664-c1a1-4833-81fd-1464a8eaccf8: Starting a new Raft election for term 1.
+2016-12-05T14:53:16.407300000 1680.915354s info: Table 50202664-c1a1-4833-81fd-1464a8eaccf8: Added replica on this server.
+2016-12-05T14:53:16.607426000 1681.115481s info: Table 50202664-c1a1-4833-81fd-1464a8eaccf8: This server is Raft leader for term 1. Latest log index is 0.
+2016-12-05T14:55:40.899578000 1825.411905s info: Table 6d575003-ba3a-49cb-af5b-1bd8331f6bf0: Configuration is changing.

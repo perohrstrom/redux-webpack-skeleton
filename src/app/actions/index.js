@@ -21,3 +21,11 @@ export const handleChange = (text) => {
     payload: text
   }
 }
+
+export const UPDATE_FRIEND = 'UPDATE_FRIEND'
+export const updateFriend = (friend) => {
+  return {
+    type: UPDATE_FRIEND,
+    payload: friend
+  }
+}

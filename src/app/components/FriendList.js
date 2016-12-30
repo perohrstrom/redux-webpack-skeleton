@@ -7,20 +7,27 @@ export default class FriendList extends Component {
   }
 
   render(){
-    console.log("i'm in the friend list", this.props.friends)
     const { friends } = this.props
     return(
-      <div>
-        <h4>{"My Friends:"}</h4>
-        { friends.map((friend, i) =>
-          <Friend
-            key={i}
-            index={i}
-            name={friend.name}
-            removeFriend={this.props.removeFriend}
-          />
-        )}
-      </div>
+      <table className="table table-striped">
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Status</th>
+        <th>Delete</th>
+      </tr>
+      <tbody>
+      { friends.map((friend, i) =>
+        <Friend
+        key={i}
+        index={i}
+        friend={friend}
+        removeFriend={this.props.removeFriend}
+        updateFriend={this.props.updateFriend}
+        />
+      )}
+      </tbody>
+      </table>
     )
   }
 }
