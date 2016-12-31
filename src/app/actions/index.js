@@ -21,3 +21,16 @@ export const handleChange = (text) => {
     payload: text
   }
 }
+
+export const UPDATE_FRIEND = 'UPDATE_FRIEND'
+export const updateFriend = (friend) => {
+  return {
+    type: UPDATE_FRIEND,
+    payload: friend
+  }
+}
+
+export const SET_VISIBILITY_FILTER = 'SET_VISIBILITY_FILTER'
+export const setVisiblityFilter = (filter) => {
+  return { type: SET_VISIBILITY_FILTER, filter }
+}

@@ -13,20 +13,20 @@ export default class FriendForm extends Component {
 
   submitForm(e){
     e.preventDefault()
-    this.props.submitForm(this.props.newFriend)
+    let friend = {
+      name: this.props.newFriend,
+      status: "high"
+    }
+    this.props.submitForm(friend)
   }
 
   render(){
     return(
-      <form onSubmit={this.submitForm}>
-        <label>Add a Friend:</label>
-        <input
-          onChange={this.handleChange}
-          type="text"
-          name="friendName"
-          value={this.props.newFriend}
-        />
-        <input type="submit" value="Submit"/>
+      <form onSubmit={this.submitForm} className="navbar-form navbar-left" role="search">
+        <div className="form-group">
+          <input type="text" onChange={this.handleChange} name="friendName" className="form-control" placeholder="Add a Friend" value={this.props.newFriend}/>
+        </div>
+        <button type="submit" className="btn btn-default">Submit</button>
       </form>
     )
   }

@@ -7,6 +7,7 @@ function mapStatetoProps(state) {
   return {
     // state property: initialState form,
     friends: state.friends,
+    visibilityFilter: state.visibilityFilter,
     newFriend: state.newFriend
   }
 }
