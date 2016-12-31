@@ -9,9 +9,9 @@ npm i --save babel-polyfill
 webpack
 npm start
 ```
-This app has the very basic rending of a redux app. It has 3 Action Creators:
+This app has the very basic rending of a redux app. It has a few Action Creators:
 
-"addFriend" and "removeFriend", and "handleChange" for when you key in a new Friend's name.
+"addFriend" and "removeFriend" - self explanatory, "handleChange" for capturing the value of the input of a new friend, and "setVisibilityFilter" for filtering the friend's list by status.
 
 Customizing the folder hierarchy is fair game, but be sure to update your directory locations on JS files where you are importing them from.
 
