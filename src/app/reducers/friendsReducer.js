@@ -6,8 +6,14 @@ const friendsReducer = (state = initialState, action) => {
     case ADD_FRIEND:
       return Object.assign([], state.concat(action.payload))
     case UPDATE_FRIEND:
-      debugger
-      return Object.assign([])
+      let index = state.map((e) => {
+        return e.name
+        }).indexOf(action.payload.name)
+      return [
+        ...state.slice(0, index),
+        action.payload,
+        ...state.slice(index + 1)
+      ]
     case REMOVE_FRIEND:
       return [
         ...state.slice(0, action.payload),

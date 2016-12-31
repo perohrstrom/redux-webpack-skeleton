@@ -29,3 +29,11 @@ export const updateFriend = (friend) => {
     payload: friend
   }
 }
+
+export const FILTER_LIST = 'FILTER_LIST'
+export const filterList = (personList) => {
+  return {
+    type: FILTER_LIST,
+    payload: personList
+  }
+}

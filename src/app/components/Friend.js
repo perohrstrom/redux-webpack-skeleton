@@ -13,11 +13,12 @@ export default class Friend extends Component {
   }
 
   inlineStyling(){
-    if (this.props.status === "low") {
+    const { friend } = this.props
+    if (friend.status === "low") {
       return "btn-warning"
-    } else if (this.props.status === "medium") {
+    } else if (friend.status === "medium") {
       return "btn-info"
-    } else if (this.props.status=== "high"){
+    } else if (friend.status=== "high"){
       return "btn-primary"
     } else {
       return "btn-success"
@@ -25,7 +26,6 @@ export default class Friend extends Component {
   }
 
   updateFriend(e){
-    debugger
     let friend = {
       name: this.props.friend.name,
       status: e.target.text.toLowerCase()
@@ -37,6 +37,7 @@ export default class Friend extends Component {
   render(){
     let inline = this.inlineStyling()
     const { index, friend } = this.props
+    console.log(this.props,inline)
     return(
       <tr>
         <td>{index + 1}</td>
