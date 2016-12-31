@@ -16,6 +16,9 @@ export default class FriendList extends Component {
 
   filterList(e){
     debugger
+    e.target.text.toLowerCase()
+    
+
   }
 
   render(){
