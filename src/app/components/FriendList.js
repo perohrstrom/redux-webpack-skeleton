@@ -5,7 +5,7 @@ export default class FriendList extends Component {
   constructor(){
     super();
     this.filterByName = this.filterByName.bind(this);
-    this.filterList = this.filterList.bind(this);
+    this.setVisiblityFilter = this.setVisiblityFilter.bind(this);
   }
 
   filterByName(searchForName, personList) {
@@ -14,11 +14,9 @@ export default class FriendList extends Component {
     });
   }
 
-  filterList(e){
-    debugger
-    e.target.text.toLowerCase()
-    
-
+  setVisiblityFilter(e){
+    let filter = "SHOW_" + e.target.text.toUpperCase()
+    this.props.setVisiblityFilter(filter)
   }
 
   render(){
@@ -32,11 +30,13 @@ export default class FriendList extends Component {
           <button type="button" className={"btn dropdown-toggle"} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Status<span className="caret"></span>
           </button>
           <ul className="dropdown-menu">
-            <li><a onClick={this.filterList}>Low</a></li>
-            <li><a onClick={this.filterList}>Medium</a></li>
-            <li><a onClick={this.filterList}>High</a></li>
+            <li><a onClick={this.setVisiblityFilter}>Low</a></li>
+            <li><a onClick={this.setVisiblityFilter}>Medium</a></li>
+            <li><a onClick={this.setVisiblityFilter}>High</a></li>
             <li role="separator" className="divider"></li>
-            <li><a onClick={this.filterList}>Confirmed</a></li>
+            <li><a onClick={this.setVisiblityFilter}>Confirmed</a></li>
+            <li role="separator" className="divider"></li>
+            <li><a onClick={this.setVisiblityFilter}>All</a></li>
           </ul>
         </th>
         <th>Delete</th>
@@ -51,6 +51,7 @@ export default class FriendList extends Component {
         updateFriend={this.props.updateFriend}
         />
       )}
+
       </tbody>
       </table>
     )

@@ -30,10 +30,7 @@ export const updateFriend = (friend) => {
   }
 }
 
-export const FILTER_LIST = 'FILTER_LIST'
-export const filterList = (personList) => {
-  return {
-    type: FILTER_LIST,
-    payload: personList
-  }
+export const SET_VISIBILITY_FILTER = 'SET_VISIBILITY_FILTER'
+export const setVisiblityFilter = (filter) => {
+  return { type: SET_VISIBILITY_FILTER, filter }
 }
