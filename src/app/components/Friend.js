@@ -37,7 +37,6 @@ export default class Friend extends Component {
   render(){
     let inline = this.inlineStyling()
     const { index, friend } = this.props
-    console.log(this.props,inline)
     return(
       <tr>
         <td>{index + 1}</td>
