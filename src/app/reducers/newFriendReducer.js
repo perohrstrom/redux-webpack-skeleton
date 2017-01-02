@@ -14,12 +14,8 @@ const newFriendReducer = (state = initialState, action) => {
   switch (action.type) {
     case HANDLE_CHANGE:
       let obj = Object.assign({}, state)
-      Object.keys(obj).forEach((key) => {
-        if (key === action.payload.property) {
-          return obj[key] = action.payload.value
-        }
-      })
-      return obj
+        obj[action.payload.property] = action.payload.value
+        return obj
     case ADD_FRIEND:
       return initialState
     default:
@@ -28,3 +24,11 @@ const newFriendReducer = (state = initialState, action) => {
 }
 
 export default newFriendReducer
+
+// let obj = Object.assign({}, state)
+// Object.keys(obj).forEach((key) => {
+//   if (key === action.payload.property) {
+//     return obj[key] = action.payload.value
+//   }
+// return obj
+// })
