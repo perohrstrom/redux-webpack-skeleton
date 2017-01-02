@@ -15,10 +15,10 @@ export const removeFriend = (index) => {
 }
 
 export const HANDLE_CHANGE = 'HANDLE_CHANGE'
-export const handleChange = (text) => {
+export const handleChange = (attribute) => {
   return {
     type: HANDLE_CHANGE,
-    payload: text
+    payload: attribute
   }
 }
 
