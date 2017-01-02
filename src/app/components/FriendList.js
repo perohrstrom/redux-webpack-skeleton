@@ -22,10 +22,18 @@ export default class FriendList extends Component {
   render(){
     const { friends } = this.props
     return(
-      <table className="table table-striped">
+      <table className="table table-responsive">
       <tr>
         <th>#</th>
         <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Address Line 1</th>
+        <th>Address Line 2</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Zip</th>
+
         <th className="btn-group">
           <button type="button" className={"btn dropdown-toggle"} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Status<span className="caret"></span>
           </button>
