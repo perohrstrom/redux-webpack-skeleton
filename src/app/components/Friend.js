@@ -43,8 +43,9 @@ export default class Friend extends Component {
         <td>{friend.fullName}</td>
         <td>{friend.email}</td>
         <td>{friend.phone}</td>
-        <td>{friend.address1}</td>
-        <td>{friend.address2}</td>
+        <td>{friend.address1}<br/>
+        {friend.address2}
+        </td>
         <td>{friend.city}</td>
         <td>{friend.state}</td>
         <td>{friend.zip}</td>
