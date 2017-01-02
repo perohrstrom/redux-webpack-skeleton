@@ -15,7 +15,9 @@ export default class FriendForm extends Component {
 
   submitForm(e){
     e.preventDefault()
-    this.props.submitForm(this.props.newFriend)
+    let friend = this.props.newFriend
+    friend["status"] = "high"
+    this.props.submitForm(friend)
   }
 
   render(){

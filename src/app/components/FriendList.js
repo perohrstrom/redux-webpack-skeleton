@@ -28,7 +28,7 @@ export default class FriendList extends Component {
         <th>Name</th>
         <th>Email</th>
         <th>Phone</th>
-        <th >Address Line</th>
+        <th >Address</th>
         <th>City</th>
         <th>State</th>
         <th>Zip</th>
