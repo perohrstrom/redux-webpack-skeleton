@@ -41,7 +41,14 @@ export default class Friend extends Component {
     return(
       <tr>
         <td>{index + 1}</td>
-        <td>{friend.name}</td>
+        <td>{friend.fullName}</td>
+        <td>{friend.email}</td>
+        <td>{friend.phone}</td>
+        <td>{friend.address1}</td>
+        <td>{friend.address2}</td>
+        <td>{friend.city}</td>
+        <td>{friend.state}</td>
+        <td>{friend.zip}</td>
         <td className="btn-group">
           <button type="button" className={"btn dropdown-toggle " + inline} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             {friend.status} <span className="caret"></span>
