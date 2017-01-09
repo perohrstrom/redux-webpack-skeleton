@@ -22,14 +22,13 @@ export default class FriendList extends Component {
   render(){
     const { friends } = this.props
     return(
-      <table className="table table-responsive">
+      <table className="table">
       <tr>
         <th>#</th>
         <th>Name</th>
         <th>Email</th>
         <th>Phone</th>
-        <th>Address Line 1</th>
-        <th>Address Line 2</th>
+        <th >Address</th>
         <th>City</th>
         <th>State</th>
         <th>Zip</th>

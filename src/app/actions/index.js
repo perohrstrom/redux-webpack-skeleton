@@ -1,8 +1,10 @@
+let nextFriend = 0
 export const ADD_FRIEND = 'ADD_FRIEND'
 export const addFriend = (friend) => {
   return {
     type: ADD_FRIEND,
-    payload: friend
+    payload: friend,
+    id: nextFriend++
   }
 }
 

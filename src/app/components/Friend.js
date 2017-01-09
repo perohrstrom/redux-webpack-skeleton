@@ -26,12 +26,9 @@ export default class Friend extends Component {
   }
 
   updateFriend(e){
-    let friend = {
-      name: this.props.friend.name,
-      status: e.target.text.toLowerCase()
-    }
+    let friend = this.props.friend
+    friend["status"] = e.target.text.toLowerCase()
     this.props.updateFriend(friend)
-
   }
 
   render(){
@@ -40,11 +37,13 @@ export default class Friend extends Component {
     return(
       <tr>
         <td>{index + 1}</td>
-        <td>{friend.fullName}</td>
+        <td>{friend.fullName} {friend.id}</td>
         <td>{friend.email}</td>
         <td>{friend.phone}</td>
-        <td>{friend.address1}</td>
-        <td>{friend.address2}</td>
+        <td className="text-center">{friend.address1}<br/>
+        {friend.address2}<br/>
+        {friend.city}, {friend.state}  {friend.zip}<br/>
+        </td>
         <td>{friend.city}</td>
         <td>{friend.state}</td>
         <td>{friend.zip}</td>
