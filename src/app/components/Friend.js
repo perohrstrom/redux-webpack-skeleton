@@ -26,25 +26,23 @@ export default class Friend extends Component {
   }
 
   updateFriend(e){
-    debugger
     let friend = this.props.friend
     friend["status"] = e.target.text.toLowerCase()
     this.props.updateFriend(friend)
-
   }
 
   render(){
     let inline = this.inlineStyling()
     const { index, friend } = this.props
-    console.log(friend, inline)
     return(
       <tr>
         <td>{index + 1}</td>
-        <td>{friend.fullName}</td>
+        <td>{friend.fullName} {friend.id}</td>
         <td>{friend.email}</td>
         <td>{friend.phone}</td>
-        <td>{friend.address1}<br/>
-        {friend.address2}
+        <td className="text-center">{friend.address1}<br/>
+        {friend.address2}<br/>
+        {friend.city}, {friend.state}  {friend.zip}<br/>
         </td>
         <td>{friend.city}</td>
         <td>{friend.state}</td>
